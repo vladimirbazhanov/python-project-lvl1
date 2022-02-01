@@ -1,4 +1,4 @@
-name: Main
+name: tests-and-linters
 
 on: [push]
 
