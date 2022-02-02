@@ -1,5 +1,5 @@
 import prompt
-from brain_games.cli import welcome_user, get_username
+from brain_games.cli import welcome_user, greet_user, get_username
 from random import randint
 
 MIN_ASKED_NUMBER = 1
@@ -10,8 +10,9 @@ ROUNDS_COUNT = 3
 def start_game():
     welcome_user()
     username = get_username()
+    greet_user(username)
 
-    print_info()
+    print_game_rules()
 
     current_round = 1
 
@@ -38,5 +39,5 @@ def start_game():
     print(f'Congratulations, {username}!')
 
 
-def print_info():
+def print_game_rules():
     print('Answer "yes" if the number is even, otherwise answer "no".')
