@@ -7,3 +7,6 @@
 
 ### Brain Even game process:
 [![asciicast](https://asciinema.org/a/wCxyXYATTRYsvSbFrI9MZ7r12.svg)](https://asciinema.org/a/wCxyXYATTRYsvSbFrI9MZ7r12)
+
+### Brain Calc game process:
+[![asciicast](https://asciinema.org/a/Ir20nrQdmmcZybVYGKZ7Jgx8W.svg)](https://asciinema.org/a/Ir20nrQdmmcZybVYGKZ7Jgx8W)
