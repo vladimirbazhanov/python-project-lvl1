@@ -1,7 +1,8 @@
 import prompt
 from random import randint
 from brain_games.cli import welcome_user, greet_user, get_username
-from brain_games.settings import MIN_ASKED_NUMBER, MAX_ASKED_NUMBER, ROUNDS_COUNT
+from brain_games.settings import MIN_ASKED_NUMBER,\
+    MAX_ASKED_NUMBER, ROUNDS_COUNT
 
 
 def start_game():
