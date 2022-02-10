@@ -1,5 +1,5 @@
 import prompt
-from random import randint
+from random import randint, choice
 from brain_games.cli import welcome_user, greet_user, get_username
 from brain_games.settings import MIN_ASKED_NUMBER, MAX_ASKED_NUMBER, ROUNDS_COUNT
 
@@ -36,11 +36,15 @@ def start_game():
 
 
 def print_game_rules():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print('What is the result of the expression?')
 
 
 def build_questions_and_correct_answer():
-    question = randint(MIN_ASKED_NUMBER, MAX_ASKED_NUMBER)
-    correct_answer = 'yes' if question % 2 == 0 else 'no'
+    operations = ['+', '-', '*']
+    value1 = randint(MIN_ASKED_NUMBER, MAX_ASKED_NUMBER)
+    value2 = randint(MIN_ASKED_NUMBER, MAX_ASKED_NUMBER)
+
+    question = ' '.join([str(value1), choice(operations), str(value2)])
+    correct_answer = str(eval(question))
 
     return question, correct_answer
