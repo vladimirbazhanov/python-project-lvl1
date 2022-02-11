@@ -10,3 +10,6 @@
 
 ### Brain Calc game process:
 [![asciicast](https://asciinema.org/a/Ir20nrQdmmcZybVYGKZ7Jgx8W.svg)](https://asciinema.org/a/Ir20nrQdmmcZybVYGKZ7Jgx8W)
+
+### Brain GCD game process:
+[![asciicast](https://asciinema.org/a/gXne5luHNhxXGn7jjqH3xt4SZ.svg)](https://asciinema.org/a/gXne5luHNhxXGn7jjqH3xt4SZ)
