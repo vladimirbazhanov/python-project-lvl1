@@ -13,3 +13,6 @@
 
 ### Brain GCD game process:
 [![asciicast](https://asciinema.org/a/gXne5luHNhxXGn7jjqH3xt4SZ.svg)](https://asciinema.org/a/gXne5luHNhxXGn7jjqH3xt4SZ)
+
+### Brain Progression game process:
+[![asciicast](https://asciinema.org/a/DRj1ithRl5othdK4HFTNhCVQu.svg)](https://asciinema.org/a/DRj1ithRl5othdK4HFTNhCVQu)
