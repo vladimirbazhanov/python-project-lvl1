@@ -1,4 +1,4 @@
-from brain_games.shared import *
+from brain_games.shared import welcome_user, get_username, greet_user
 
 
 def main():
