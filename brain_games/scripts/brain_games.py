@@ -1,9 +1,10 @@
-from brain_games.shared import welcome_user, get_username
+from brain_games.shared import *
 
 
 def main():
     welcome_user()
-    get_username()
+    username = get_username()
+    greet_user(username)
 
 
 if __name__ == '__main__':
