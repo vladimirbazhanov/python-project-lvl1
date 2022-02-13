@@ -10,7 +10,7 @@ def print_game_rules():
     print(GAME_RULES)
 
 
-def build_questions_and_correct_answer():
+def build_question_with_answer():
     number = randint(MIN_ASKED_NUMBER, MAX_ASKED_NUMBER)
     question = str(number)
     correct_answer = 'yes' if is_prime(number) else 'no'

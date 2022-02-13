@@ -8,7 +8,7 @@ def print_game_rules():
     print(GAME_RULES)
 
 
-def build_questions_and_correct_answer():
+def build_question_with_answer():
     question = randint(MIN_ASKED_NUMBER, MAX_ASKED_NUMBER)
     correct_answer = 'yes' if question % 2 == 0 else 'no'
 

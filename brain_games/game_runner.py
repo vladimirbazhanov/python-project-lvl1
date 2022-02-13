@@ -13,7 +13,7 @@ def run_game(game_engine):
     current_round = 1
 
     while current_round <= ROUNDS_COUNT:
-        question, correct_answer = game_engine.build_questions_and_correct_answer()
+        question, correct_answer = game_engine.build_question_with_answer()
 
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
@@ -21,7 +21,8 @@ def run_game(game_engine):
         if user_answer == correct_answer:
             print('Correct!')
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"'{user_answer}' is wrong answer ;(. ",
+                  f"Correct answer was '{correct_answer}'.")
             print(f'Let\'s try again, {username}!')
 
             return

@@ -8,7 +8,7 @@ def print_game_rules():
     print(GAME_RULES)
 
 
-def build_questions_and_correct_answer():
+def build_question_with_answer():
     question = build_question()
 
     index = randint(0, len(question) - 1)

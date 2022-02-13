@@ -8,7 +8,7 @@ def print_game_rules():
     print(GAME_RULES)
 
 
-def build_questions_and_correct_answer():
+def build_question_with_answer():
     operations = ['+', '-', '*']
     value1 = randint(MIN_ASKED_NUMBER, MAX_ASKED_NUMBER)
     value2 = randint(MIN_ASKED_NUMBER, MAX_ASKED_NUMBER)
