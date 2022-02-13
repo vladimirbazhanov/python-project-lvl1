@@ -1,10 +1,14 @@
 [tool.poetry]
 name = "brain-games"
-version = "0.1.0"
-description = ""
+version = "1.0.0"
+description = "little games pack for training you mind"
+repository = "https://github.com/vladimirbazhanov/python-project-lvl1"
 authors = ["Vladimir Bazhanov <vladimir.a.bazhanov@gmail.com>"]
 packages = [
   { include = "brain_games" },
+]
+classifiers = [
+  "Topic :: Games/Entertainment"
 ]
 
 [tool.poetry.dependencies]
