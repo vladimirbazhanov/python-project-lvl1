@@ -9,18 +9,25 @@ def print_game_rules():
 
 
 def build_questions_and_correct_answer():
+    question = build_question()
+
+    index = randint(0, len(question) - 1)
+    correct_answer = str(question[index])
+    question[index] = '..'
+    question = ', '.join(question)
+
+    return question, correct_answer
+
+
+def build_question():
     start = randint(1, 25)
     step = randint(2, 8)
     length = randint(5, 10)
 
     question = []
     while length > 0:
-        question.append(start + step)
+        question.append(str(start + step))
         start += step
         length -= 1
 
-    index = randint(0, len(question) - 1)
-    correct_answer = str(question[index])
-    question[index] = '..'
-
-    return question, correct_answer
+    return question
