@@ -1,4 +1,5 @@
 from random import randint
+from math import sqrt
 from brain_games.settings import MIN_ASKED_NUMBER, MAX_ASKED_NUMBER
 
 
@@ -21,8 +22,9 @@ def is_prime(number):
     if number <= 1:
         return False
 
-    for d in range(2, number // 2):
+    for d in range(2, int(sqrt(number) + 1)):
         if number % d == 0:
             return False
+            break
 
     return True
