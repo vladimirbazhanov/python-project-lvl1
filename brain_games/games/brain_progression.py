@@ -14,7 +14,7 @@ def build_questions_and_correct_answer():
     index = randint(0, len(question) - 1)
     correct_answer = str(question[index])
     question[index] = '..'
-    question = ', '.join(question)
+    question = ' '.join(question)
 
     return question, correct_answer
 

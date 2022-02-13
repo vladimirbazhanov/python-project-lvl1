@@ -13,7 +13,7 @@ def build_questions_and_correct_answer():
     value1 = randint(MIN_ASKED_NUMBER, MAX_ASKED_NUMBER)
     value2 = randint(MIN_ASKED_NUMBER, MAX_ASKED_NUMBER)
 
-    question = ', '.join([str(value1), str(value2)])
+    question = ' '.join([str(value1), str(value2)])
     correct_answer = str(gcd(value1, value2))
 
     return question, correct_answer
