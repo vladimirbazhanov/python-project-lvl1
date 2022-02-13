@@ -1,5 +1,9 @@
+from brain_games.shared import welcome_user, get_username
+
+
 def main():
-    print('Welcome to the Brain Games!')
+    welcome_user()
+    get_username()
 
 
 if __name__ == '__main__':
