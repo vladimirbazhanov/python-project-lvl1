@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "brain-games"
+name = "hexlet-code"
 version = "1.0.0"
 description = "little games pack for training you mind"
 repository = "https://github.com/vladimirbazhanov/python-project-lvl1"
