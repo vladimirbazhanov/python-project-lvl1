@@ -25,6 +25,5 @@ def is_prime(number):
     for d in range(2, int(sqrt(number) + 1)):
         if number % d == 0:
             return False
-            break
 
     return True
