@@ -1,11 +1,6 @@
 from random import randint
 
-
 GAME_RULES = 'What number is missing in the progression?'
-
-
-def print_game_rules():
-    print(GAME_RULES)
 
 
 def build_question_with_answer():

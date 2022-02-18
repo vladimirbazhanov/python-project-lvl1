@@ -8,7 +8,7 @@ def run_game(game_engine):
     username = get_username()
     greet_user(username)
 
-    game_engine.print_game_rules()
+    print(game_engine.GAME_RULES)
 
     current_round = 1
 

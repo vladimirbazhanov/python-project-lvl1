@@ -5,10 +5,6 @@ from operator import add, sub, mul
 GAME_RULES = 'What is the result of the expression?'
 
 
-def print_game_rules():
-    print(GAME_RULES)
-
-
 def build_question_with_answer():
     operations = ['+', '-', '*']
     value1 = randint(MIN_ASKED_NUMBER, MAX_ASKED_NUMBER)
