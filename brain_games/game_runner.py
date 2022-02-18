@@ -1,5 +1,4 @@
 import prompt
-from brain_games.shared import welcome_user, greet_user, get_username
 from brain_games.settings import ROUNDS_COUNT
 
 
@@ -30,3 +29,15 @@ def run_game(game_engine):
         current_round += 1
 
     print(f'Congratulations, {username}!')
+
+
+def welcome_user():
+    print('Welcome to the Brain Games!')
+
+
+def greet_user(username):
+    print(f'Hello, {username}!')
+
+
+def get_username():
+    return prompt.string('May I have your name? ')
