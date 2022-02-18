@@ -1,12 +1,11 @@
 from random import randint
 from math import sqrt
-from brain_games.settings import MIN_ASKED_NUMBER, MAX_ASKED_NUMBER
 
 GAME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def build_question_with_answer():
-    number = randint(MIN_ASKED_NUMBER, MAX_ASKED_NUMBER)
+def build_question_with_answer(minimum, maximum):
+    number = randint(minimum, maximum)
     question = str(number)
     correct_answer = 'yes' if is_prime(number) else 'no'
 

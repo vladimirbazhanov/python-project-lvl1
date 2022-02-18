@@ -1,14 +1,13 @@
 from random import randint, choice
-from brain_games.settings import MIN_ASKED_NUMBER, MAX_ASKED_NUMBER
 from operator import add, sub, mul
 
 GAME_RULES = 'What is the result of the expression?'
 
 
-def build_question_with_answer():
+def build_question_with_answer(minimum, maximum):
     operations = ['+', '-', '*']
-    value1 = randint(MIN_ASKED_NUMBER, MAX_ASKED_NUMBER)
-    value2 = randint(MIN_ASKED_NUMBER, MAX_ASKED_NUMBER)
+    value1 = randint(minimum, maximum)
+    value2 = randint(minimum, maximum)
 
     chosen_operation = choice(operations)
 

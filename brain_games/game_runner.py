@@ -1,5 +1,8 @@
 import prompt
-from brain_games.settings import ROUNDS_COUNT
+
+ROUNDS_COUNT = 3
+MIN_ASKED_NUMBER = 1
+MAX_ASKED_NUMBER = 25
 
 
 def run_game(game_engine):
@@ -12,7 +15,10 @@ def run_game(game_engine):
     current_round = 1
 
     while current_round <= ROUNDS_COUNT:
-        question, correct_answer = game_engine.build_question_with_answer()
+        question, correct_answer = game_engine.build_question_with_answer(
+            MIN_ASKED_NUMBER,
+            MAX_ASKED_NUMBER
+        )
 
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
