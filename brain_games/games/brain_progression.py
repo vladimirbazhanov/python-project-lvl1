@@ -1,28 +1,25 @@
 from random import randint
-
 GAME_RULES = 'What number is missing in the progression?'
 
 
 def build_question_with_answer(minimum, maximum):
-    question = build_question(minimum, maximum)
+    progression = build_progression(minimum, maximum)
 
-    index = randint(0, len(question) - 1)
-    correct_answer = str(question[index])
-    question[index] = '..'
-    question = ' '.join(question)
+    index = randint(0, len(progression) - 1)
+    correct_answer = progression[index]
+    progression[index] = '..'
+
+    question = ' '.join(progression)
 
     return question, correct_answer
 
 
-def build_question(minimum, maximum):
+def build_progression(minimum, maximum):
     start = randint(minimum, maximum)
     step = randint(2, 8)
     length = randint(5, 10)
 
-    question = []
-    while length > 0:
-        question.append(str(start + step))
-        start += step
-        length -= 1
+    progression = list(range(start, (start + length * step), step))
+    progression = [str(i) for i in progression]
 
-    return question
+    return progression
